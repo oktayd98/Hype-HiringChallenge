@@ -1,0 +1,194 @@
+
+body {
+    background: url("./images/Image.png");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.tabs {
+    margin-top: 4rem;
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    color:white;
+    
+}
+
+.testimonials {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: 2px solid white;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.feedbacks {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: 2px solid white;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.testimonials.active {
+    background-color: white;
+    color:#000;
+}
+
+.feedbacks.active {
+    background-color: white;
+    color:#000;
+}
+
+.testimonials-container {
+    display: none;
+    width: 100%;
+}
+
+.testimonials-container.active {
+    display: block;
+}
+
+.feedbacks-container {
+    display: none;
+    width: 100%;
+}
+
+.feedbacks-container.active {
+    display: block;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    min-height: 190px;
+    width: 100%;
+}
+
+.sliders {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 200px;
+}
+
+.slider .feedback {
+    position: absolute;
+    transform: scale(0);
+    transition: transform .5s, opacity .8s;
+    opacity: 0;
+    will-change: transform, opacity;
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+    transition: .6s ease;
+}
+
+.slider .feedback.slide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slider .feedback p {
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(22, 23, 28, 0.7);
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 7rem;
+    width: 350px;
+}
+
+.card .profile {
+    margin-right: 1rem;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .info .name {
+    font-size: 18px;
+}
+
+.card .info .company {
+    font-size: 12px;
+}
+
+.card .info .social {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.card .info .social .social-icon {
+    margin-right: 1rem;
+}
+
+.card:hover {
+    background-color: white;
+    box-shadow: 0px 29px 55px rgba(0,0,0,0.69);
+}
+
+.card:hover span {
+    color: #4F5362;
+}
+
+.card:hover svg path {
+    fill: #4F5362;
+}
+
+.card.active {
+    background-color: white;
+    box-shadow: 0px 29px 55px rgba(0,0,0,0.69);
+}
+
+.card.active span {
+    color: #4F5362;
+}
+
+.card.active svg path {
+    fill: #4F5362;
+}
